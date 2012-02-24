@@ -1,0 +1,19 @@
+li.task
+  = task.name
+  = task.created_at
+
+  form.update action="/task/update/#{task.id}" method="POST"
+    input type="hidden" name="_method" value="PUT"
+    input type="text" name="task[name]" value="#{task.name}"
+    input type="submit" value="&times;" title="Edit task"
+
+  form.update action="/task/#{task.id}" method="POST"
+    input type="hidden" name="_method" value="PUT"
+    -if task.completed_at.nil?
+      input type="submit" value="  " title="Complete task"
+    -else
+      input type="submit" value="✓" title="Uncomplete task"
+
+  form.delete action="/task/#{task.id}" method="POST"
+    input type="hidden" name="_method" value="DELETE"
+    input type="submit" value="&times;" title="Delete task"
