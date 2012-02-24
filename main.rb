@@ -3,7 +3,7 @@ require 'data_mapper'
 require 'slim'
 require 'sinatra'
 
-DataMapper.setup(:default, ENV['DATABASE_URL'] || "sqlite://#{Dir.pwd}/development.db")
+DataMapper.setup(:default, ENV['postgres://recndhefbacsvy:BAzWaG5y2syaBaIYjsP5hI4xN6@pg55.sharedpg.heroku.com/severe_summer_21492'] || "sqlite://#{Dir.pwd}/development.db")
 
 class Task
   include DataMapper::Resource
