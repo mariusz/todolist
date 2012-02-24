@@ -2,6 +2,7 @@ require 'rubygems'
 require 'data_mapper'
 require 'slim'
 require 'sinatra'
+require 'thin'
 
 DataMapper.setup(:default, ENV['DATABASE_URL'] || "postgres://svbmysahux:riFmFyl2XShpHIJBdPp2@ec2-23-21-226-247.compute-1.amazonaws.com/svbmysahux")
 
