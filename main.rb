@@ -1,5 +1,5 @@
 require 'rubygems'
-require 'datamapper'
+require 'data_mapper'
 require 'slim'
 require 'sinatra'
 
