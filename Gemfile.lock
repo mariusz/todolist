@@ -97,6 +97,6 @@ DEPENDENCIES
   dm-postgres-adapter
   heroku
   pg
-  sinatra (= 1.3.2)
+  sinatra
   slim
   thin
