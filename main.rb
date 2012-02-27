@@ -5,7 +5,7 @@ require 'slim'
 require 'sinatra'
 require 'thin'
 
-DataMapper.setup(:default, ENV['DATABASE_URL'] || "postgres://zcpcbdupnq:bNFsMK6vFJz0on_0NfVy@ec2-107-20-191-126.compute-1.amazonaws.com/zcpcbdupnq")
+DataMapper.setup(:default, ENV['DATABASE_URL'] || "mysql://55bb603bd430bb:94277be7@us-mm-auto-dca-01.cleardb.com/heroku_b5637de89b8df46")
 
 class Task
   include DataMapper::Resource
