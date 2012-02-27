@@ -5,7 +5,7 @@ require 'slim'
 require 'sinatra'
 require 'thin'
 
-DataMapper.setup(:default, ENV['DATABASE_URL'] || "mysql://55bb603bd430bb:94277be7@us-mm-auto-dca-01.cleardb.com/heroku_b5637de89b8df46")
+DataMapper.setup(:default, ENV['DATABASE_URL'] || "sqlite3://#{Dir.pwd}/development.db")
 
 class Task
   include DataMapper::Resource
