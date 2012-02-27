@@ -5,7 +5,7 @@ require 'slim'
 require 'sinatra'
 require 'thin'
 
-DataMapper.setup(:default, ENV['DATABASE_URL'] || "postgres://svbmysahux:riFmFyl2XShpHIJBdPp2@ec2-23-21-226-247.compute-1.amazonaws.com/svbmysahux")
+DataMapper.setup(:default, ENV['DATABASE_URL'] || "postgres://zcpcbdupnq:bNFsMK6vFJz0on_0NfVy@ec2-107-20-191-126.compute-1.amazonaws.com/zcpcbdupnq")
 
 class Task
   include DataMapper::Resource
