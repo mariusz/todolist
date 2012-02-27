@@ -8,3 +8,4 @@ gem 'dm-postgres-adapter'
 gem 'thin'
 gem 'foreman'
 gem 'rails'
+
